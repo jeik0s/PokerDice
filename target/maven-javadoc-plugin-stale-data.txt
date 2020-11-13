@@ -1,0 +1,55 @@
+/Library/Java/JavaVirtualMachines/jdk-11.0.8.jdk/Contents/Home/bin/javadoc
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'/Users/jzaremba/NetBeansProjects/dicePoker/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2020. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/Users/jzaremba/NetBeansProjects/dicePoker/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'dicePoker 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/en/java/javase/11/docs/api' '/Users/jzaremba/NetBeansProjects/dicePoker/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'dicePoker 1.0-SNAPSHOT API'
+controller
+controller
+controller
+model
+model
+model
+view
+view
+/Users/jzaremba/NetBeansProjects/dicePoker/src/main/java = 1602952311496
+/Users/jzaremba/NetBeansProjects/dicePoker/target/site/apidocs/constant-values.html = 1605297555632
+/Users/jzaremba/NetBeansProjects/dicePoker/target/site/apidocs/member-search-index.zip = 1605297555689
+/Users/jzaremba/NetBeansProjects/dicePoker/target/site/apidocs/overview-tree.html = 1605297555657
+/Users/jzaremba/NetBeansProjects/dicePoker/target/site/apidocs/index.html = 1605297555708
+/Users/jzaremba/NetBeansProjects/dicePoker/target/site/apidocs/package-search-index.js = 1605297555667
+/Users/jzaremba/NetBeansProjects/dicePoker/target/site/apidocs/package-search-index.zip = 1605297555686
+/Users/jzaremba/NetBeansProjects/dicePoker/target/site/apidocs/type-search-index.zip = 1605297555688
+/Users/jzaremba/NetBeansProjects/dicePoker/target/site/apidocs/serialized-form.html = 1605297555635
+/Users/jzaremba/NetBeansProjects/dicePoker/target/site/apidocs/index-all.html = 1605297555690
+/Users/jzaremba/NetBeansProjects/dicePoker/target/site/apidocs/allpackages-index.html = 1605297555699
+/Users/jzaremba/NetBeansProjects/dicePoker/target/site/apidocs/deprecated-list.html = 1605297555703
+/Users/jzaremba/NetBeansProjects/dicePoker/target/site/apidocs/member-search-index.js = 1605297555688
+/Users/jzaremba/NetBeansProjects/dicePoker/target/site/apidocs/allclasses.html = 1605297555704
+/Users/jzaremba/NetBeansProjects/dicePoker/target/site/apidocs/script.js = 1605297555712
+/Users/jzaremba/NetBeansProjects/dicePoker/target/site/apidocs/stylesheet.css = 1605297555712
+/Users/jzaremba/NetBeansProjects/dicePoker/target/site/apidocs/overview-summary.html = 1605297555709
+/Users/jzaremba/NetBeansProjects/dicePoker/target/site/apidocs/help-doc.html = 1605297555711
+/Users/jzaremba/NetBeansProjects/dicePoker/target/site/apidocs/element-list = 1605297555609
+/Users/jzaremba/NetBeansProjects/dicePoker/target/site/apidocs/allclasses-index.html = 1605297555697
+/Users/jzaremba/NetBeansProjects/dicePoker/target/site/apidocs/type-search-index.js = 1605297555687
+/Users/jzaremba/NetBeansProjects/dicePoker/target/site/apidocs/search.js = 1605297555713
