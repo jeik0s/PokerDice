@@ -41,7 +41,7 @@ public class GameSetup {
      * Heart of the application, controller of the data input and output
      * @param mainArgs parameters from main function, that should define dice polls 
      */
-    public void runApplication(String mainArgs[]){
+    public void manageData(String mainArgs[]){
         /**
          * Array that contain dice polls as integer;
          */
