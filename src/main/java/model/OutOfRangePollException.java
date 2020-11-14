@@ -9,8 +9,8 @@ package model;
 * Exception class, to throw exception
 *
 * @author Jakub Zaremba
-* @version 1.0
-* @since   2020-11-06 
+* @version 2.0
+* @since   2020-11-14
 */
 public class OutOfRangePollException extends RuntimeException {
     public OutOfRangePollException(String message){

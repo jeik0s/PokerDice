@@ -1,5 +1,7 @@
 package controller;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 import model.DicePoker;
 import view.View;
@@ -8,33 +10,33 @@ import view.View;
 * Main controller class responsible for controlling data flow between model and view
 *
 * @author Jakub Zaremba
-* @version 1.0
-* @since   2020-11-01 
+* @version 2.0
+* @since   2020-11-14 
 */
 public class GameSetup {
     /**
      * Function allows user to put number of dice polls
-     * @return number of dices polls
+     * @return Integer List of dices polls
      */
-    private int[] getDicePolls(){
-        int[] dicePolls = new int[5];
+    private List<Integer> getDicePolls(){
+        List<Integer> dicePollsList = new ArrayList<>();
         for(int i=0;i<5;i++){
             Scanner scanner = new Scanner(System.in);
-            dicePolls[i] = Integer.parseInt(scanner.next());
+            dicePollsList.add(Integer.parseInt(scanner.next()));
         }
-        return dicePolls;
+        return dicePollsList;
     }
     /**
      * Function that prase dice polls provided in String to Int
      * @param String array that needs to be converted to int
-     * @return Int array of the dice polls
+     * @return Integer List of the dice polls
      */
-    private int[] prasePollsStringToInt(String[] polls){
-        int[] dicePolls = new int[5];
+    private List<Integer> prasePollsStringToInt(String[] polls){
+        List<Integer> dicePollsList = new ArrayList<>();
         for(int i=0;i<5;i++){
-            dicePolls[i] = Integer.parseInt(polls[i]);
+            dicePollsList.add(Integer.parseInt(polls[i]));
         }
-            return dicePolls;
+            return dicePollsList;
     }
     
     /**
@@ -43,13 +45,13 @@ public class GameSetup {
      */
     public void manageData(String mainArgs[]){
         /**
-         * Array that contain dice polls as integer;
+         * ArrayList that contain dice polls as integer;
          */
-        int[] dicePolls = new int[5];
+        List<Integer> dicePollsList = new ArrayList<>();
         /**
-         * Array that contain player figures
+         * ArrayList that contain player figures
          */
-        int[] numbersOfPolls = new int[5];
+        List<Integer> numbersOfPollsList = new ArrayList<>();
         
         DicePoker dicePoker = new DicePoker();
         View view = new View();
@@ -58,15 +60,15 @@ public class GameSetup {
         
         if(mainArgs.length < 5 || mainArgs.length > 6){
             view.displayMessage("nie podałes argumentow, albo podales ich za malo/duzo. Prosze podaj je teraz:");
-            dicePolls = getDicePolls();
+            dicePollsList = getDicePolls();
         } else {
             view.displayMessage("Numery oczek zostaly podane jako argumenty");
-            dicePolls = prasePollsStringToInt(mainArgs);
+            dicePollsList = prasePollsStringToInt(mainArgs);
         }
         
         try{
-            numbersOfPolls = dicePoker.checkPolls(dicePolls);
-            view.showDicesPolls(numbersOfPolls);
+            numbersOfPollsList = dicePoker.checkPolls(dicePollsList);
+            view.showDicesPolls(numbersOfPollsList);
         } catch(model.OutOfRangePollException ex) {
             // Prawopodobnie będzie trzeba stworzyć Loggera który bedzie obsługiwał wyświetlanie błedów.
             // Ale jako że w wymaganiach na razie tego nie ma wyświetlam to z pomoca metody z widoku.

@@ -4,13 +4,13 @@
  * and open the template in the editor.
  */
 package view;
-
+import java.util.List;
 /**
 * Class responsible for displaying data on the screen 
 *
 * @author Jakub Zaremba
-* @version 1.0
-* @since   2020-11-01 
+* @version 2.0
+* @since   2020-11-14
 */
 public class View {
     /**
@@ -24,9 +24,11 @@ public class View {
      * Method that display dice figures 
      * @param dices integer array with dice figures
      */
-    public void showDicesPolls(int[] dices){
-        for(int i=0;i<dices.length;i++){
-            System.out.println("kostk z " + (i+1) + " oczkiem jest " + dices[i]);
+    public void showDicesPolls(List<Integer> dices){
+        int i = 0;
+        for (Integer element : dices) {
+            i++;
+            System.out.println("kostk z " + (i) + " oczkiem jest " + element);
         }
     }
 }
