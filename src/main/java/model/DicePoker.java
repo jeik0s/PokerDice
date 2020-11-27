@@ -19,7 +19,7 @@ public class DicePoker {
          * @param dicePollsList integer list of dice polls rate
          * @return String with poker figure name
          */
-        private String getFigure(List<Integer> dicePollsList){
+        private String defineFigureFromPolls(List<Integer> dicePollsList){
         
             String finalResult;
             
@@ -95,7 +95,7 @@ public class DicePoker {
         pollsList.add(frequency(dicePollsList, 5));
         pollsList.add(frequency(dicePollsList, 6));
         
-        figureResult = getFigure(pollsList);
+        figureResult = defineFigureFromPolls(pollsList);
         
         return figureResult;
     }

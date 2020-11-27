@@ -65,12 +65,12 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="testCheckOneOfTheNumberIsNull" classname="model.DicePokerTest" time="0.013"/>
+  <testcase name="testCheckOneOfTheNumberIsNull" classname="model.DicePokerTest" time="0.012"/>
   <testcase name="testCheckPollsEmptyArray" classname="model.DicePokerTest" time="0"/>
   <testcase name="testCheckPollsWithNotPossiblePollsNumbers{int}[1]" classname="model.DicePokerTest" time="0.017"/>
   <testcase name="testCheckPollsWithNotPossiblePollsNumbers{int}[2]" classname="model.DicePokerTest" time="0"/>
   <testcase name="testCheckPollsWithNotPossiblePollsNumbers{int}[3]" classname="model.DicePokerTest" time="0.001"/>
-  <testcase name="testCheckPollsWithNotPossiblePollsNumbers{int}[4]" classname="model.DicePokerTest" time="0.001"/>
+  <testcase name="testCheckPollsWithNotPossiblePollsNumbers{int}[4]" classname="model.DicePokerTest" time="0"/>
   <testcase name="testCheckPollsArrayWithMoreElementThanExpected" classname="model.DicePokerTest" time="0.005"/>
-  <testcase name="testCheckPollsArrayWithLessElementThanExpected" classname="model.DicePokerTest" time="0"/>
+  <testcase name="testCheckPollsArrayWithLessElementThanExpected" classname="model.DicePokerTest" time="0.001"/>
 </testsuite>
