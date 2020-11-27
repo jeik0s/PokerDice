@@ -8,8 +8,8 @@ package controller;
 * Main class that allows to run application
 * 
 * @author Jakub Zaremba
-* @version 1.0
-* @since   2020-10-28 
+* @version 2.0
+* @since   2020-11-14
 */
 public class Main {
     /**

@@ -2,4 +2,7 @@ model/DicePoker.class
 view/View.class
 controller/GameSetup.class
 controller/Main.class
+model/DiffrentNumberOfElementsThanExpectedException.class
+model/NullValueException.class
+model/EmptyArrayException.class
 model/OutOfRangePollException.class
