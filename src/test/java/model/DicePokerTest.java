@@ -104,10 +104,10 @@ public class DicePokerTest {
      }
      
       /**
-      * Test check if we are able to pass ArrayList if one of the value is null
+      * Check if main model method return good data 
       */
      @Test
-     public void testAccuracy() {
+     public void testMainModelMethodWithGoodData() {
         List<Integer> testNumbers = new ArrayList();
         String Figure;
         testNumbers.add(6);
