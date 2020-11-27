@@ -103,4 +103,39 @@ public class DicePokerTest {
         }
      }
      
+      /**
+      * Test check if we are able to pass ArrayList if one of the value is null
+      */
+     @Test
+     public void testAccuracy() {
+        List<Integer> testNumbers = new ArrayList();
+        String Figure;
+        testNumbers.add(6);
+        testNumbers.add(5);
+        testNumbers.add(4);
+        testNumbers.add(3);
+        testNumbers.add(2);
+        DicePoker dicePoker = new DicePoker();
+        Figure = dicePoker.checkFigure(testNumbers);
+        assertEquals(Figure,"Duzy strit");
+        
+        testNumbers.clear();
+        testNumbers.add(6);
+        testNumbers.add(6);
+        testNumbers.add(4);
+        testNumbers.add(3);
+        testNumbers.add(3);
+        Figure = dicePoker.checkFigure(testNumbers);
+        assertEquals(Figure,"Dwie pary");
+        
+        testNumbers.clear();
+        testNumbers.add(6);
+        testNumbers.add(6);
+        testNumbers.add(2);
+        testNumbers.add(6);
+        testNumbers.add(6);
+        Figure = dicePoker.checkFigure(testNumbers);
+        assertEquals(Figure,"Kareta");
+     }
+     
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="model.DicePokerTest" time="0.061" tests="8" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="model.DicePokerTest" time="0.065" tests="9" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.8+10-LTS"/>
@@ -66,8 +66,9 @@
     <property name="sun.cpu.isalist" value=""/>
   </properties>
   <testcase name="testCheckOneOfTheNumberIsNull" classname="model.DicePokerTest" time="0.012"/>
-  <testcase name="testCheckPollsEmptyArray" classname="model.DicePokerTest" time="0"/>
-  <testcase name="testCheckPollsWithNotPossiblePollsNumbers{int}[1]" classname="model.DicePokerTest" time="0.017"/>
+  <testcase name="testAccuracy" classname="model.DicePokerTest" time="0.002"/>
+  <testcase name="testCheckPollsEmptyArray" classname="model.DicePokerTest" time="0.001"/>
+  <testcase name="testCheckPollsWithNotPossiblePollsNumbers{int}[1]" classname="model.DicePokerTest" time="0.015"/>
   <testcase name="testCheckPollsWithNotPossiblePollsNumbers{int}[2]" classname="model.DicePokerTest" time="0"/>
   <testcase name="testCheckPollsWithNotPossiblePollsNumbers{int}[3]" classname="model.DicePokerTest" time="0.001"/>
   <testcase name="testCheckPollsWithNotPossiblePollsNumbers{int}[4]" classname="model.DicePokerTest" time="0"/>
