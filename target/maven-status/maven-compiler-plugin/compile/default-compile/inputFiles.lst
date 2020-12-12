@@ -1,11 +1,10 @@
-/Users/jzaremba/NetBeansProjects/JavaLaby/dicePoker/src/main/java/model/EmptyArrayException.java
 /Users/jzaremba/NetBeansProjects/JavaLaby/dicePoker/src/main/java/model/DicePoker.java
-/Users/jzaremba/NetBeansProjects/JavaLaby/dicePoker/src/main/java/model/DiffrentNumberOfElementsThanExpectedException.java
 /Users/jzaremba/NetBeansProjects/JavaLaby/dicePoker/src/main/java/view/View.java
 /Users/jzaremba/NetBeansProjects/JavaLaby/dicePoker/src/main/java/controller/GameSetup.java
-/Users/jzaremba/NetBeansProjects/JavaLaby/dicePoker/src/main/java/model/OutOfRangePollException.java
-/Users/jzaremba/NetBeansProjects/JavaLaby/dicePoker/src/main/java/model/NullValueException.java
+/Users/jzaremba/NetBeansProjects/JavaLaby/dicePoker/src/main/java/GUIView/dicePokerGUI.java
+/Users/jzaremba/NetBeansProjects/JavaLaby/dicePoker/src/main/java/model/DicePokerIllegalDataException.java
 /Users/jzaremba/NetBeansProjects/JavaLaby/dicePoker/src/main/java/model/package-info.java
 /Users/jzaremba/NetBeansProjects/JavaLaby/dicePoker/src/main/java/controller/Main.java
 /Users/jzaremba/NetBeansProjects/JavaLaby/dicePoker/src/main/java/view/package-info.java
 /Users/jzaremba/NetBeansProjects/JavaLaby/dicePoker/src/main/java/controller/package-info.java
+/Users/jzaremba/NetBeansProjects/JavaLaby/dicePoker/src/main/java/GUIView/Main.java

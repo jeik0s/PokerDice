@@ -1,8 +1,11 @@
+GUIView/dicePokerGUI$1.class
 model/DicePoker.class
 view/View.class
 controller/GameSetup.class
 controller/Main.class
-model/DiffrentNumberOfElementsThanExpectedException.class
-model/NullValueException.class
-model/EmptyArrayException.class
-model/OutOfRangePollException.class
+GUIView/Main.class
+GUIView/dicePokerGUI$2.class
+GUIView/Main$1.class
+model/DicePokerIllegalDataException.class
+GUIView/dicePokerGUI.class
+GUIView/dicePokerGUI$3.class

@@ -10,8 +10,8 @@ import java.util.List;
 * Base business logic model class that should represents player results
 *
 * @author Jakub Zaremba
-* @version 2.0
-* @since   2020-11-14 
+* @version 3.0
+* @since   2020-12-06 
 */
 public class DicePoker {
         /**
@@ -20,7 +20,10 @@ public class DicePoker {
          * @return String with poker figure name
          */
         private String defineFigureFromPolls(List<Integer> dicePollsList){
-        
+            
+            /**
+            * String that will contains dice figure
+            */
             String finalResult;
             
             if(frequency(dicePollsList,5) == 1){
@@ -51,10 +54,10 @@ public class DicePoker {
                 finalResult = "Dwie pary";
             }
             else if(frequency(dicePollsList,2) == 1){
-                finalResult = "jedna para";
+                finalResult = "Jedna para";
             }
             else {
-                finalResult = "nic";
+                finalResult = "Nic";
             }
         
         return finalResult;
@@ -76,7 +79,7 @@ public class DicePoker {
          */
         String figureResult;
         
-        if(dicePollsList.isEmpty())
+        if(dicePollsList == null || dicePollsList.isEmpty())
            throw new DicePokerIllegalDataException("Zbior który wyslales jest pusty"); 
         
         if(dicePollsList.contains(null))
@@ -99,8 +102,5 @@ public class DicePoker {
         
         return figureResult;
     }
-    
-    
-    
     
 }

@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"model","l":"DicePoker"},{"p":"GUIView","l":"dicePokerGUI"},{"p":"model","l":"DicePokerIllegalDataException"},{"p":"zOLDcontroller","l":"GameSetup"},{"p":"GUIView","l":"Main"},{"p":"zOLDcontroller","l":"Main"},{"p":"zOLDview","l":"View"}]

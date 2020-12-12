@@ -10,8 +10,8 @@ import org.junit.jupiter.params.provider.ValueSource;
 /**
  * Unit tests for poker game model
  * @author Jakub Zaremba
- * @version 2.0
- * @since   2020-11-14 
+ * @version 3.0
+ * @since   2020-12-05 
  */
 public class DicePokerTest {
     /**
@@ -82,6 +82,20 @@ public class DicePokerTest {
         } catch(DicePokerIllegalDataException ex){  
         }
      }
+      
+    /**
+    * Test check if we are able to pass null ArrayList
+    */
+    @Test
+     public void testCheckPollsWithNullArray() {
+        DicePoker dicePoker = new DicePoker();
+        List<Integer> testNumbers = null;
+        try{
+            dicePoker.checkFigure(testNumbers);
+            fail("An exception should be thrown when Collection is null");
+        } catch(DicePokerIllegalDataException ex){  
+        }
+     }
      
       /**
       * Test check if we are able to pass ArrayList if one of the value is null
@@ -109,15 +123,15 @@ public class DicePokerTest {
      @Test
      public void testMainModelMethodWithGoodData() {
         List<Integer> testNumbers = new ArrayList();
-        String Figure;
+        String figure;
         testNumbers.add(6);
         testNumbers.add(5);
         testNumbers.add(4);
         testNumbers.add(3);
         testNumbers.add(2);
         DicePoker dicePoker = new DicePoker();
-        Figure = dicePoker.checkFigure(testNumbers);
-        assertEquals(Figure,"Duzy strit");
+        figure = dicePoker.checkFigure(testNumbers);
+        assertEquals(figure,"Duzy strit", "Function should return figure - Duzy Strit");
         
         testNumbers.clear();
         testNumbers.add(6);
@@ -125,8 +139,8 @@ public class DicePokerTest {
         testNumbers.add(4);
         testNumbers.add(3);
         testNumbers.add(3);
-        Figure = dicePoker.checkFigure(testNumbers);
-        assertEquals(Figure,"Dwie pary");
+        figure = dicePoker.checkFigure(testNumbers);
+        assertEquals(figure,"Dwie pary", "Function should return figure - Dwie Pary");
         
         testNumbers.clear();
         testNumbers.add(6);
@@ -134,8 +148,8 @@ public class DicePokerTest {
         testNumbers.add(2);
         testNumbers.add(6);
         testNumbers.add(6);
-        Figure = dicePoker.checkFigure(testNumbers);
-        assertEquals(Figure,"Kareta");
+        figure = dicePoker.checkFigure(testNumbers);
+        assertEquals(figure,"Kareta", "Function should return figure - Kareta");
      }
      
 }
